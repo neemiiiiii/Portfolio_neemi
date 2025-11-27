@@ -1,0 +1,164 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+#back-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.65;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.7rem 2rem;
+    background-color: rgba(132, 89, 53, 0.95);
+    color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.me {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Navbar */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: bisque;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Hero section */
+.hero {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+#img-me {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.intro {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    max-width: 650px;
+    background: rgba(255, 228, 196, 0.9);
+    color: #653A1F;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Cards for sections */
+.card {
+    margin: 4rem auto;
+    padding: 2rem;
+    max-width: 650px;
+    background: rgba(255, 228, 196, 0.9);
+    color: #653A1F;
+    border-radius: 12px;
+    backdrop-filter: blur(3px);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: #2A1C12;
+    margin-bottom: 1rem;
+}
+
+/* Table */
+table {
+    margin: 2rem auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #845935;
+    color: bisque;
+}
+
+table, th, td {
+    border: 2px double #2A1C12;
+}
+
+td {
+    background-color: bisque;
+    padding: 10px;
+    color: #653A1F;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #845935;
+    background: #fffdf7;
+}
+
+input[type="submit"] {
+    background-color: #845935;
+    color: bisque;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.85;
+}
+
+/* Footer */
+footer {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+footer a {
+    color: #2A1C12;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
